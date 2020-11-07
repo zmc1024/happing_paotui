@@ -1,14 +1,17 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/community/community",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/get/get",
+    "pages/ji/ji",
+    "pages/run/run"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ab956d",
+    "navigationBarTitleText": "开心跑腿",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#b7b7b7",
@@ -16,7 +19,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "image/12.png", 
+        "iconPath": "image/12.png",
         "selectedIconPath": "image/11.png",
         "text": "首页"
       },
@@ -34,8 +37,6 @@
       }
     ]
   },
-  
-    
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

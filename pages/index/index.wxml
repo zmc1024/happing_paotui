@@ -1,2 +1,51 @@
 <!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="main">
+	<view class="module">
+		<swiper
+		 autoplay="true"
+		 interval="{{interval}}"
+		 duration="{{duration}}"
+		 circular="true"
+		 indicator-dots="true"
+		 indicator-color="#fff"
+		>
+			<block wx:for="{{imgUrl}}" wx:key="{{index}}">
+				<swiper-item>
+					<image
+					 class="slide_image"
+					 src="{{item}}"
+					 width="100%"
+					/>
+				</swiper-item>
+			</block>
+		</swiper>
+
+		<view class="block">
+			<view class="block_left">
+				<navigator url="../get/get">
+					代取快递
+					<text class="iconfont icon-kuaidiyuan"></text>
+				</navigator>
+			</view>
+			<view class="block_midle">
+				<navigator url="../ji/ji">
+					寄快递
+					<text class="iconfont icon-wuliuxiaocheche"></text>
+				</navigator>
+			</view>
+			<view class="block_right">
+				<navigator url="../run/run">
+					万能跑
+					<text class="iconfont icon-001diandongche"></text>
+				</navigator>
+			</view>
+		</view>
+
+		<view class="text">
+			<button plain="{{true}}" size="mini">待取件</button>
+			<button plain="{{true}}" size="mini">已接单</button>
+			<button plain="{{true}}" size="mini">已完成</button>
+		</view>
+	</view>
+</view>
+
