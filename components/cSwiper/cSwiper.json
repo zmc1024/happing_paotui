@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "c-swiper": "/components/cSwiperItem/cSwiperItem"
+    "c-swiper": "/components/cSwiper/cSwiperItem/cSwiperItem"
   }
 }

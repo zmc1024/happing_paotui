@@ -1,6 +1,6 @@
 <!--components/cSwiper/cSwiper.wxml-->
 <swiper current="{{current}}" class="swiper-box" duration="100" style="height:{{winHeight - 31}}px" bindchange="bindChange">
-  <c-swiper-item></c-swiper-item>
+  <!-- <c-swiper-item></c-swiper-item> -->
   <!-- <swiper-item>
     <view>产品</view>
   </swiper-item>

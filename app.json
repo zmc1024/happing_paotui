@@ -1,15 +1,17 @@
 {
   "pages": [
-    "pages/community/community",
     "pages/index/index",
+    "pages/community/community",
     "pages/user/user",
-    "pages/community/comments/comments"
+    "pages/get/get",
+    "pages/ji/ji",
+    "pages/run/run"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#ab956d",
     "navigationBarTitleText": "开心跑腿",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#b7b7b7",
