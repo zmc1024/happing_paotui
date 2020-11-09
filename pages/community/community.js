@@ -6,7 +6,41 @@ Page({
    */
   data: {
     currentTab: 0,
-    navTitle:['最新', '热门', '话题']
+    navTitle:['最新', '热门', '话题'],
+    grid:[
+      {
+        image: '/image/community/home.png',
+        title: '首页',
+      },
+      {
+        image: '/image/community/notice.png',
+        title: '系统公告',
+      },
+      {
+        image: '/image/community/second-hand.png',
+        title: '二手集市',
+      },
+      {
+        image: '/image/community/lost_and_found.png',
+        title: '失物招领',
+      },
+      {
+        image: '/image/community/couple.png',
+        title: '卖室友',
+      },
+      {
+        image: '/image/community/tree_hole.png',
+        title: '匿名树洞', 
+      },
+      {
+        image: '/image/community/traffic.png',
+        title: '拼车出行',
+      },
+      {
+        image: '/image/community/help.png',
+        title: '求助打听'
+      }
+    ]
   },
   
 

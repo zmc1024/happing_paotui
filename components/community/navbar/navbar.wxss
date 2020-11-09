@@ -5,9 +5,11 @@
     text-align: center;
     line-height: 80rpx;
     display: flex;
+    border-bottom: 24rpx solid #F5F5F5;
+    padding-bottom: 20rpx;
   }
 .nav-tab{  
-    font-size: 30rpx;
+    font-size: 36rpx;
     display: inline-block;
     flex: 1;
     color: #AFAFAF;
@@ -23,12 +25,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  width: 2rem;
+  width: 60rpx;
   border-top: 8rpx solid #AB956D;
   margin: 0 auto;
-}
-
-.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }
-.swiper-box view{
-    text-align: center;
 }

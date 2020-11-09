@@ -1,4 +1,4 @@
-/* pages/community/community.wxss */
+/* components/community/grid.wxss */
 .grid {
   width: 100%;
   color: #747474;

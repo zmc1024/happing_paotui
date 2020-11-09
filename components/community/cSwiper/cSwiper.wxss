@@ -1,0 +1,31 @@
+/* components/cSwiper/cSwiper.wxss */
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }
+.swiper-box view{
+    text-align: left;
+}
+.comment {
+  width: 100%;
+}
+.comment .avatar {
+  display: flex;
+  align-items: center;
+}
+.comment .avatar image{
+  width: 64rpx;
+  border-radius: 50%;
+}
+.comment .avatar .avatar-detail .name,.from{
+  display: block;
+}
+.comment .avatar .avatar-detail .name{
+  font-size: 30rpx;
+  font-weight: 700;
+}
+.comment .avatar .avatar-detail .from{
+  font-size: 26rpx;
+  color: #c4c4c4
+}
+.comment .content-footer{
+  font-size: 26rpx;
+  color: #c4c4c4
+}

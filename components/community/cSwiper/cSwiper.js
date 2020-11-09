@@ -10,6 +10,9 @@ Component({
 
       wx.getSystemInfo({
         success: function (res) {
+          console.log(res.windowWidth);
+          console.log(res.windowHeight);
+
           self.setData({
             winWidth: res.windowWidth,
             winHeight: res.windowHeight

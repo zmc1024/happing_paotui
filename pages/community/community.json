@@ -1,7 +1,8 @@
 {
   "usingComponents": {
     "van-search": "@vant/weapp/search/index",
-    "nav-bar": "/components/navbar/navbar",
-    "c-swiper": "/components/cSwiper/cSwiper"
+    "nav-bar": "/components/community/navbar/navbar",
+    "c-swiper": "/components/community/cSwiper/cSwiper",
+    "grid": "/components/community/grid/grid"
   }
 }
