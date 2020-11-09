@@ -12,7 +12,7 @@
     "minified": true,
     "newFeature": false,
     "coverView": true,
-    "nodeModules": false,
+    "nodeModules": true,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
@@ -28,17 +28,17 @@
       "disablePlugins": [],
       "outputPath": ""
     },
-    "enableEngineNative": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
+    "enableEngineNative": false,
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.0",
-  "appid": "wx52520f7c758d28a7",
+  "appid": "wxb00b5cd66ec97228",
   "projectname": "happy-paotui",
   "debugOptions": {
     "hidedInDevtools": []

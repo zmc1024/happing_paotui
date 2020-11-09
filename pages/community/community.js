@@ -5,14 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    currentTab: 0,
+    navTitle:['最新', '热门', '话题']
   },
+  
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    /**
+     * 获取当前设备的宽高
+     */
+  },
 
+  receiveCurrentTab: function (res) {
+    var self = this
+    self.setData({
+      currentTab: res.detail,
+    })
   },
 
   /**

@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "nav-bar": "/components/navbar/navbar",
+    "c-swiper": "/components/cSwiper/cSwiper"
+  }
 }
