@@ -36,6 +36,8 @@ Component({
   data: {
     winWidth: 0,
     winHeight: 0,
+    count: 124,
+    whatColor: false
   },
 
   /**
@@ -43,11 +45,24 @@ Component({
    */
   methods: {
     bindChange: function (e) {
-      console.log(e);
       var self = this;
       self.setData({ current: e.detail.current });
       console.log(self.data.current);
       self.triggerEvent("sendCurrentTab", this.data.current);
+    },
+    like(e) {
+      this.setData({
+        whatColor: !this.data.whatColor
+      })
+      if(this.data.whatColor) {
+        this.setData({
+          count: ++this.data.count
+        })
+      }else {
+        this.setData({
+          count: --this.data.count
+        })
+      }
     }
   }
 })

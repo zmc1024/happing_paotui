@@ -11,18 +11,35 @@
         </view>
       </view>
       <view class="content-wrapper">
-        <text class="content" selectable="false" space="false" decode="false">
-          原价6099
+        <text class="content">原价6099
           出售5700
           用了差不多一周，盒子什么都有，
-          面谈
-        </text>
+          面谈</text>
       </view>
       <view class="content-footer">
-        <text class="detail">2020-11-09 10:04:52 197浏览 0评论 0点赞</text>
+        <text class="detail">2020-11-09 10:04:52 197</text>
+        <van-icon name="eye-o" size="36rpx" class="vc" />
+
+        <view class="icon">
+          <text class="{{whatColor ? 'good-job' : ''}}">{{count}}</text>
+          <van-icon name="good-job-o" size="36rpx" class="vc" bind:click="like" color="{{whatColor ? '#24ADF3' : '#c4c4c4'}}"/>
+          <view class="more">
+            <text>50</text>
+            <van-icon name="more-o" size="36rpx" class="vc" />
+          </view>
+        </view>
+
       </view>
     </view>
   </swiper-item>
+
+
+
+
+
+
+
+
   <swiper-item>
     <view>金融</view>
   </swiper-item>
