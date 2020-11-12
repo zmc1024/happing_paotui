@@ -2,44 +2,32 @@
 <!-- current:当前所在滑块的 index -->
 <swiper current="{{current}}" class="swiper-box" duration="100" style="height:{{winHeight}}px" bindchange="bindChange">
   <swiper-item>
-    <view class="comment">
+    <view class="comment" wx:for="{{secondHand}}" wx:key="index">
       <view class="avatar">
         <image class="" src="/image/community/squirrel.jpg" mode="widthFix" />
         <view class="avatar-detail">
-          <text class="name">失去爱情的摩托车手</text>
-          <text class="from">#二手集市 来自Android</text>
+          <text class="name">{{item.avatar.name}}</text>
+          <text class="from">{{item.avatar.from}}</text>
         </view>
       </view>
       <view class="content-wrapper">
-        <text class="content">原价6099
-          出售5700
-          用了差不多一周，盒子什么都有，
-          面谈</text>
+        <text class="content">{{item.content}}</text>
       </view>
       <view class="content-footer">
-        <text class="detail">2020-11-09 10:04:52 197</text>
+        <text class="detail">{{item.footer.time}}</text>
+        <text class="detail-visit">{{item.footer.visit}}</text>
         <van-icon name="eye-o" size="36rpx" class="vc" />
-
         <view class="icon">
-          <text class="{{whatColor ? 'good-job' : ''}}">{{count}}</text>
-          <van-icon name="good-job-o" size="36rpx" class="vc" bind:click="like" color="{{whatColor ? '#24ADF3' : '#c4c4c4'}}"/>
+          <text class="{{whatColor ? 'good-job' : ''}}">{{item.footer.count}}</text>
+          <van-icon name="good-job-o" size="36rpx" class="vc" bind:click="like" color="{{whatColor ? '#24ADF3' : '#c4c4c4'}}" />
           <view class="more">
-            <text>50</text>
+            <text>{{item.footer.comment}}</text>
             <van-icon name="more-o" size="36rpx" class="vc" />
           </view>
         </view>
-
       </view>
     </view>
   </swiper-item>
-
-
-
-
-
-
-
-
   <swiper-item>
     <view>金融</view>
   </swiper-item>

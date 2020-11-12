@@ -1,4 +1,5 @@
 // components/cSwiper/cSwiper.js
+var secondHand = require('../../../data/secondHand.js');
 Component({
   /**
    * 组件的属性列表
@@ -36,8 +37,8 @@ Component({
   data: {
     winWidth: 0,
     winHeight: 0,
-    count: 124,
-    whatColor: false
+    whatColor: false,
+    secondHand
   },
 
   /**
@@ -50,18 +51,17 @@ Component({
       console.log(self.data.current);
       self.triggerEvent("sendCurrentTab", this.data.current);
     },
-    like(e) {
+    like() {
+      let secondHand = this.data.secondHand
       this.setData({
         whatColor: !this.data.whatColor
       })
       if(this.data.whatColor) {
-        this.setData({
-          count: ++this.data.count
-        })
+        ++secondHand.footer.count
+        this.setData({ secondHand })
       }else {
-        this.setData({
-          count: --this.data.count
-        })
+        --secondHand.footer.count
+        this.setData({ secondHand })
       }
     }
   }
