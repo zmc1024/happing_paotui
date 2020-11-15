@@ -1,2 +1,35 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class="head-container">
+    <view class="user-info">
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <block wx:else>
+            <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+    </view>
+</view>
+<view class="btn">
+    <button class="received-Order" bindtap="gotoPage1">
+        <p>0<span>已接订单</span></p>            
+    </button>
+    <button class="wallet" bindtap="gotoPage2">
+        <p>0.00<span>我的钱包</span></p>
+    </button>
+    <button class="sent-Order" bindtap="gotoPage3">
+        <p>0<span>已发订单</span></p>
+    </button>
+</view>
+<view class="shotCut-func">
+    <mp-cells title="快捷功能">
+        <mp-cell link url="../Verified/Verified" hover value="实名认证" footer="未认证">
+            <image  slot="icon" src="/../image/certification.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </mp-cell>
+        <mp-cell link url="../addressBook/addressBook" hover value="地址簿" >
+            <image slot="icon" src="/../image/addressBook.png" style="margin-right: 10px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </mp-cell>
+        <mp-cell link url="../Service/Service" hover value="联系客服" footer="服务时间9:00~12:00">
+            <image slot="icon" src="/../image/customerService.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+        </mp-cell>
+    </mp-cells>
+</view>
+      

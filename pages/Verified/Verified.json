@@ -1,9 +1,8 @@
 {
-  "usingComponents": {  
+  "usingComponents": {
     "mp-cells": "/miniprogram_npm/weui-miniprogram/cells/cells",
     "mp-cell": "/miniprogram_npm/weui-miniprogram/cell/cell",
     "mp-badge": "/miniprogram_npm/weui-miniprogram/badge/badge"
   },
-  "navigationBarTitleText": "我的主页"
-
+  "navigationBarTitleText": "实名认证"
 }

@@ -1,1 +1,47 @@
 /* pages/user/user.wxss */
+.head-container{
+    width: 100%;
+    padding-top: 0;
+    height: 300rpx;
+    background-color: DeepSkyBlue;
+    border-bottom-right-radius:60rpx;
+    border-bottom-left-radius:60rpx;
+}
+.user-info{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #ffffff;
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    color: #ffffff;
+    flex: 1;
+}
+.btn button {
+    width: 140rpx;
+    height: 130rpx;
+    border-radius: 30rpx;
+}
+.btn button p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.btn button p span {
+    color: darkgray;
+    font-size: 30rpx;
+}

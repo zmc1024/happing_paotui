@@ -1,8 +1,14 @@
 {
   "pages":[
+    "pages/user/user",
     "pages/index/index",
     "pages/community/community",
-    "pages/user/user"
+    "pages/orderReceived/orderReceived",
+    "pages/myWallet/myWallet",
+    "pages/orderSent/orderSent",
+    "pages/Verified/Verified",
+    "pages/addressBook/addressBook",
+    "pages/Service/Service"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -35,6 +41,9 @@
     ]
   },
   
+  "useExtendedLib": { 
+    "weui": true
+  },
     
   "style": "v2",
   "sitemapLocation": "sitemap.json"
