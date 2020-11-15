@@ -82,8 +82,8 @@
 		</view>
 
 		<view class="express_btn">
-			<van-button size="normal" color="linear-gradient(to right, #33d9c6, #4bc2d9, #60adea)">快递1</van-button>
-			<van-button color="#309aeb" plain>+添加快递</van-button>
+			<van-button class="btn1" color="linear-gradient(to right, #33d9c6, #4bc2d9, #60adea)">快递1</van-button>
+			<van-button class="btn2" color="#309aeb" plain>+添加快递</van-button>
 		</view>
 
 		<caidai></caidai>
