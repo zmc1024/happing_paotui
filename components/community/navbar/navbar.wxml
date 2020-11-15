@@ -1,0 +1,6 @@
+<!--components/navbar/navbar.wxml-->
+<view class="nav">
+  <view class="nav-tab {{index ===  currentTab ? 'on' : ''}}" wx:for="{{navTitle}}" wx:key="index" data-current="{{index}}" bindtap="swichNav">
+    {{item}}
+  </view>
+</view>

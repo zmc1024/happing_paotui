@@ -1,0 +1,23 @@
+{
+  "name": "happing_paotui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmc1024/happing_paotui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zmc1024/happing_paotui/issues"
+  },
+  "homepage": "https://github.com/zmc1024/happing_paotui#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.5.2"
+  }
+}

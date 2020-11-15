@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "pages":[
     "pages/user/user",
     "pages/index/index",
@@ -9,12 +10,21 @@
     "pages/Verified/Verified",
     "pages/addressBook/addressBook",
     "pages/Service/Service"
+=======
+  "pages": [
+    "pages/community/community",
+    "pages/index/index",
+    "pages/user/user",
+    "pages/get/get",
+    "pages/ji/ji",
+    "pages/run/run"
+>>>>>>> 9d4e062aa0f30b3913a7d3ac83cb855af80c191b
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ab956d",
+    "navigationBarTitleText": "开心跑腿",
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#b7b7b7",
@@ -22,7 +32,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "image/12.png", 
+        "iconPath": "image/12.png",
         "selectedIconPath": "image/11.png",
         "text": "首页"
       },
@@ -40,11 +50,14 @@
       }
     ]
   },
+<<<<<<< HEAD
   
   "useExtendedLib": { 
     "weui": true
   },
     
   "style": "v2",
+=======
+>>>>>>> 9d4e062aa0f30b3913a7d3ac83cb855af80c191b
   "sitemapLocation": "sitemap.json"
 }

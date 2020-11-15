@@ -1,0 +1,9 @@
+<!--components/community/grid.wxml-->
+<view class="grid">
+  <view class="grid-wrapper">
+    <view class="grid-item" wx:for="{{grid}}" wx:key="index">
+      <image src="{{item.image}}" mode="widthFix"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+/* components/community/grid.wxss */
+.grid {
+  width: 100%;
+  color: #747474;
+}
+.grid .grid-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.grid .grid-wrapper .grid-item {
+  text-align: center;
+  width: 25%;
+  padding: 20rpx 0;
+}
+.grid .grid-wrapper .grid-item image {
+  width: 64rpx;
+  height: 64rpx;
+}
+.grid .grid-wrapper .grid-item text {
+  display: block;
+  font-size: 24rpx;
+  padding-top: 10rpx;
+}
+

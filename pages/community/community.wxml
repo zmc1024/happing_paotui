@@ -1,2 +1,7 @@
-<!--pages/community/community.wxml-->
-<text>pages/community/community.wxml</text>
+<!-- pages/community/community.wxml -->
+<view class="wrapper">
+  <van-search value="{{ value }}" placeholder="请输入搜索关键词" clearable="true" maxlength="-1" shape="round" />
+  <grid grid="{{grid}}"/>
+  <nav-bar nav-title="{{navTitle}}" bind:sendCurrentTab="receiveCurrentTab" currentTab="{{currentTab}}"></nav-bar>
+  <c-swiper current="{{currentTab}}" bind:sendCurrentTab="receiveCurrentTab"></c-swiper>
+</view>
