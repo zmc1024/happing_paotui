@@ -4,7 +4,18 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    content:{
+      type: String,
+      value: ''
+    },
+    bgcStyle:{
+      type: String,
+      value: ''
+    },
+    word_color:{
+      type: String,
+      value: ''
+    }
   },
 
   /**

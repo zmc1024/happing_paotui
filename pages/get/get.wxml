@@ -1,2 +1,95 @@
-<!--pages/get/get.wxml-->
-<text>pages/get/get.wxml</text>
+<view class="main">
+	<title
+	 content="取货中"
+	 word_color="color: #2e9aed;"
+	 bgcStyle="background: linear-gradient(to right, #33d9c6, #4bc2d9, #60adea)"
+	></title>
+
+	<view class="song-address">
+		<view class="first">
+			<text class="iconfont icon-tongxinyuantu"></text>
+			<input
+			 type="text"
+			 class="address"
+			 placeholder="请输入送达的具体地址"
+			/>
+		</view>
+
+		<view class="name-num">
+			<input
+			 type="text"
+			 class="name"
+			 placeholder="请输入名字"
+			/>
+			<input
+			 type="text"
+			 class="number"
+			 placeholder="请输入手机号"
+			/>
+		</view>
+
+		<view class="third">
+			<text class="iconfont icon-tongxinyuantu-copy"></text>
+			<input
+			 type="text"
+			 class="time"
+			 placeholder="送达时间"
+			/>
+		</view>
+	</view>
+
+	<view class="express-news">
+		<caidai></caidai>
+
+		<view class="express">
+			<text class="ex1">快递1</text>
+			<text class="del">删除</text>
+		</view>
+
+		<view class="point">
+			<text class="iconfont icon-tongxinyuantu-copy"></text>
+			<input
+			 type="text"
+			 class="express-point"
+			 placeholder="请选择快递点"
+			/>
+		</view>
+
+		<view class="weui-cells weui-cells_after-title">
+			<view class="weui-cell">
+				<view class="weui-cell__bd">
+					<textarea
+					 class="weui-textarea"
+					 placeholder="请将快递信息粘贴此处或填写备注 (快递、取件码等信息)"
+					 style="height: 3.3em"
+					/>
+					<view class="weui-textarea-counter">0/200</view>
+        </view>
+      </view>
+    </view>
+		
+		<view class="cost">
+			<input
+			 type="text"
+			 class="Reward-fee"
+			 placeholder="悬赏费用"
+			/>
+		</view>
+
+		<view class="Reward_details">
+			<text class="Reward_word1">悬赏费用高低会直接影响接单快慢，建议选择3元以上的费用。大件快递，请选择合适的价格哦~</text>
+			<text class="Reward_word2">可添加多个快递 (点击上方删除可删除当前快递信息)</text>
+		</view>
+
+		<view class="express_btn">
+			<van-button size="normal" color="linear-gradient(to right, #33d9c6, #4bc2d9, #60adea)">快递1</van-button>
+			<van-button color="#309aeb" plain>+添加快递</van-button>
+		</view>
+
+		<caidai></caidai>
+	</view>
+
+	<bottom btn_msg="合计￥2（共一个快递）" btn_color="#33d9c6, #4bc2d9, #60adea"></bottom>
+
+</view>
+

@@ -1,3 +1,31 @@
 <!--component/title/title.wxml-->
-<view class="title"></view>
+<view class="bgc" style="{{bgcStyle}}">
+	<view class="flex">
+		<view class="circle">
+			<view class="word" style="{{word_color}}">1</view>
+		</view>
+		<view class="text">发布需求</view>
+	</view>
+
+	<view class="flex">
+		<view class="circle">
+			<view class="word" style="{{word_color}}">2</view>
+		</view>
+		<view class="text">抢单</view>
+	</view>
+
+	<view class="flex">
+		<view class="circle">
+			<view class="word" style="{{word_color}}">3</view>
+		</view>
+		<view class="text">{{content}}</view>
+	</view>
+
+	<view class="flex flex-d">
+		<view class="circle">
+			<view class="word" style="{{word_color}}">4</view>
+		</view>
+		<view class="text">完成</view>
+	</view>
+</view>
 

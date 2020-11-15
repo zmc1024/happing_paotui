@@ -1,2 +1,50 @@
 <!--pages/ji/ji.wxml-->
-<text>pages/ji/ji.wxml</text>
+<view class="main">
+	<title
+	 content="派送中"
+	 word_color="color: #ff875e"
+	 bgcStyle="background: linear-gradient(to right, #fea748, #ff8960, #fe7373)"
+	></title>
+
+	<address
+	 jiaddr_plac="寄件人地址"
+	 ji_name="寄件人姓名"
+	 ji_number="寄件人手机号"
+	 shouaddr_plac="收件人地址"
+	 shou_name="收件人姓名"
+	 shou_number="收件人手机号"
+	 visit_time="上门时间"
+	></address>
+
+	<view class="goods_msg">
+		<caidai></caidai>
+		<detail></detail>
+
+		<view class="goods_type">
+			<input
+			 type="text"
+			 class="goods_typedeil"
+			 placeholder="物品类型"
+			/>
+		</view>
+
+		<view class="express_company">
+			<input
+			 type="text"
+			 class="express_companydeil"
+			 placeholder="快递公司"
+			/>
+		</view>
+
+		<view class="Reward_details">
+			<text class="Reward_word1">1、提交信息后请保持电话通畅，我们的快递员很快会跟您取得联系。</text>
+			<text class="Reward_word2">2、寄快递全国统一价10元，首重1KG，超过后需补费用。</text>
+		</view>
+
+		<caidai></caidai>
+	</view>
+
+	<bottom btn_msg="费用￥0.00（首重1KG）" btn_color="#fea748, #ff8960, #fe7373"></bottom>
+
+</view>
+

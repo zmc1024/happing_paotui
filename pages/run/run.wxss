@@ -1,1 +1,24 @@
-/* pages/run/run.wxss */
+.main{
+  list-style: none;
+  min-height: 645px;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+.run_msg{
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+  top: -5px;
+}
+.run_cost{
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px auto 20px;
+}
+.run_money{
+  float: right;
+}

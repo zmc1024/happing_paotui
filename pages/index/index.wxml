@@ -9,7 +9,7 @@
 		 indicator-dots="true"
 		 indicator-color="#fff"
 		>
-			<block wx:for="{{imgUrl}}" wx:key="{{index}}">
+			<block wx:for="{{imgUrl}}" wx:key="index">
 				<swiper-item>
 					<image
 					 class="slide_image"

@@ -1,2 +1,36 @@
 <!--pages/run/run.wxml-->
-<text>pages/run/run.wxml</text>
+<view class="main">
+	<title
+	 content="派送中"
+	 word_color="color: #8e77fe"
+	 bgcStyle="background: linear-gradient(to right, #33bddd, #5e9cec, #8979f9)"
+	></title>
+
+	<address
+	 jiaddr_plac="请输入起点"
+	 ji_name="名字 (选填)"
+	 ji_number="手机号 (选填)"
+	 shouaddr_plac="请输入终点"
+	 shou_name="名字 (选填)"
+	 shou_number="手机号 (选填)"
+	 visit_time="送达时间"
+	></address>
+
+	<view class="run_msg">
+		<caidai></caidai>
+		<detail></detail>
+
+		<view class="run">
+			<input
+			 type="text"
+			 class="run_cost"
+			 placeholder="跑腿费 (请输入费用)"
+			/>
+		</view>
+		<caidai></caidai>
+	</view>
+
+	<bottom btn_msg="合计￥0.00（含2KG及以下）" btn_color="#33bddd, #5e9cec, #8979f9"></bottom>
+
+</view>
+

@@ -1,1 +1,31 @@
 /* pages/ji/ji.wxss */
+.main{
+  min-height: 750px;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+.goods_msg{
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+  top: -5px;
+}
+.goods_typedeil,.express_companydeil{
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px auto;
+}
+.Reward_details{
+  width: 90%;
+  font-size: 12px;
+  color: #9a9a9a;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.Reward_details text{
+  display: inline-block;
+}

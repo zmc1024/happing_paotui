@@ -1,1 +1,153 @@
-/* pages/get/get.wxss */
+.main{
+  list-style: none;
+  min-height: 700px;
+  height: 100%;
+  background-color: #f5f5f5;
+}
+.song-address{
+  border-radius: 20px 20px 0px 0px;
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  top: -20px;
+}
+.address,.name,.number,.time{
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  width: 75%;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 20px;
+}
+.name,.number{
+  width: 45%;
+}
+.first,.third,.point{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.first{
+  padding-top: 15px;
+}
+.name-num{
+  width: 72%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px auto;
+}
+.name{
+  margin-left: 15px;
+}
+.third{
+  padding-bottom: 25px;
+}
+
+.express{
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 90%;
+}
+.ex1{
+  font-weight: bold;
+  margin: 0 auto;
+}
+.del{
+  color: #f2ae46;
+  font-size: 14px;
+}
+.express-news{
+  position: relative;
+  top: -5px;
+  width: 100%;
+  background-color: #fff;
+}
+.weui-cell{
+  background-color: #f5f5f5;
+}
+.express-point,.Reward-fee{
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  width: 75%;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 20px;
+}
+.Reward-fee{
+  border-radius: 5px;
+  width: 90%;
+  height: 40px;
+  line-height: 40px;
+  margin: 10px auto;
+}
+.weui-cells{
+  margin: 10px auto 0;
+  border-radius: 5px;
+  width: 90%;
+}
+.Reward_details{
+  width: 90%;
+  font-size: 12px;
+  color: #9a9a9a;
+  margin: 0 auto;
+}
+.Reward_details text{
+  display: inline-block;
+}
+.express_btn{
+  margin: 10px auto 13px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+view .van-button{
+  border-radius: var(--button-border-radius,5px);
+  height: 35px;
+  line-height: 35px;
+}
+
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_2200912_8xf1hhlhd8b.eot?t=1605340323751'); /* IE9 */
+  src: url('//at.alicdn.com/t/font_2200912_8xf1hhlhd8b.eot?t=1605340323751#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAMkAAsAAAAABwAAAALYAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDDAqBaIIAATYCJAMICwYABCAFhG0HNxtJBhHVk4FkfynemArtb0iIJpbCUckt6jbHIV6Oy/rBg7D4Iv7bCVRjqCPn80Eg0RqZ2d2DJ1YApADBEikgy6SoVbWtrKuqRHaAsu5BJ9f2BWD1yxeAZbkXAJCLe5h0GwbmpYGkk4vkW2wpJZ5IdqwHXgME0ILPpirV1ak7LHwaNUB9sOIt38U5TvpduU4PG12N7lfD0P9cTq8FFMj8QLnMMfHeUS/AOKAAx9xkBXIBcMPYBS5hMwTwJEIaqaxu7MTFYPUSQCbHRvpwc34MhqVcBLtmokEOSFx1isB++H35Q04uKCyNNbB1uGqQ0u/2Xem9/dlHEMxnBdg00EAaMCC9tfF2NMKoGs+4IQH7aiXwXd3efsc3Invl2X8eYmMVewOQhxIavuMCAt9lhAoFhTf+SwWAAWygElia7QlgS5z0iPebN/3u9FZ8PVKdL1bvjm/lAreK28CBknFU1aPIW28fJW+IntJW+aMm9/cnlc3xuZ44PeTq6HS7vneT0pBeehZSWOfqSO/lA/2/ASWFuRCFM55e+zGgJDEXojB+O794fju/ocsfLe59ixg183B3UUrHdY9SAG6v72r/9/hw9vs//Ar/uxYAn96ssMvtDToKcO/JIfCnBT2rjC6yDMqogtq0ohL7nqWedghuWe5AX8eqQ14kLbiEvI7TITwFjUscwVDSwMKLPLBxKQFPUtVM9yLIFBoxBaRYBSD4uw8KXx6Bxt8TgqF8AYtQ/8DGPw2edEvQgl4khLYqoxZ0YA5oLU3eMYmKSh8Y4qA5KwppH+SlDUGeZMVUjRPyHEOWNRQiHjzTCBXYDoeBYGbq0ErSiMxlmvq6NyWWxpMioxZ0YA5oLU3ery+q9PkHhjhobsHU2D/IS9s85EnWg1DLp16Ye7lmWUMh4sEzjVCBdjgMBHN9uw6tJM2I6Fymdi3fV56srxy/bgPgiaVRYq+gMUNT2NvpiHqSeDoB') format('woff2'),
+  url('//at.alicdn.com/t/font_2200912_8xf1hhlhd8b.woff?t=1605340323751') format('woff'),
+  url('//at.alicdn.com/t/font_2200912_8xf1hhlhd8b.ttf?t=1605340323751') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('//at.alicdn.com/t/font_2200912_8xf1hhlhd8b.svg?t=1605340323751#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 20px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 5px;
+}
+
+.icon-tongxinyuantu{
+  color: #fd3d2e;
+}
+.icon-tongxinyuantu-copy{
+  color: #09bb06;
+}
+.point .icon-tongxinyuantu-copy{
+  color: #3399e8;
+}
+
+.icon-tongxinyuantu:before {
+  content: "\e600";
+}
+
+.icon-tongxinyuantu-copy:before {
+  content: "\e601";
+}
+
+.icon-tongxinyuantu-copy1:before {
+  content: "\e602";
+}
+
+

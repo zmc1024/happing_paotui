@@ -1,2 +1,6 @@
 <!--component/bottom/bottom.wxml-->
-<text>component/bottom/bottom.wxml</text>
+<view class="bottom">
+	<text class="bottom_deil">{{btn_msg}}</text>
+	<van-button color="linear-gradient(to right, {{btn_color}})">去下单</van-button>
+</view>
+

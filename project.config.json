@@ -4,7 +4,7 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": false,
+    "urlCheck": true,
     "es6": true,
     "enhance": false,
     "postcss": true,
@@ -12,13 +12,13 @@
     "minified": true,
     "newFeature": false,
     "coverView": true,
-    "nodeModules": true,
+    "nodeModules": false,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
     "uglifyFileName": false,
     "checkInvalidKey": true,
-    "checkSiteMap": true,
+    "checkSiteMap": false,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
     "useMultiFrameRuntime": false,
@@ -28,22 +28,18 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "enableEngineNative": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
-    "enableEngineNative": false,
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.0",
-<<<<<<< HEAD
-  "appid": "wxec2708d61479636f",
-=======
-  "appid": "wxb00b5cd66ec97228",
->>>>>>> 9d4e062aa0f30b3913a7d3ac83cb855af80c191b
-  "projectname": "happy-paotui",
+  "appid": "wx52520f7c758d28a7",
+  "projectname": "miniprogram-1",
   "debugOptions": {
     "hidedInDevtools": []
   },

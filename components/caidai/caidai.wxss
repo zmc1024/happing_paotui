@@ -1,0 +1,27 @@
+/* components/caidai/caidai.wxss */
+.ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-height: 5px;
+  height: auto;
+}
+.caidai{
+  list-style: none;
+  min-height: 5px;
+  height: auto;
+}
+.li{
+  float: left;
+  list-style: none;
+  width: 24px;
+  height: 5px;
+  transform: skewX(-45deg);
+  margin: 0 5px;
+}
+.li:nth-of-type(odd){
+  background-color: #3498e6;
+}
+.li:nth-of-type(even){
+  background-color: #fd3d2e;
+}

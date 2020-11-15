@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "pages":[
     "pages/user/user",
     "pages/index/index",
@@ -10,21 +9,12 @@
     "pages/Verified/Verified",
     "pages/addressBook/addressBook",
     "pages/Service/Service"
-=======
-  "pages": [
-    "pages/community/community",
-    "pages/index/index",
-    "pages/user/user",
-    "pages/get/get",
-    "pages/ji/ji",
-    "pages/run/run"
->>>>>>> 9d4e062aa0f30b3913a7d3ac83cb855af80c191b
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ab956d",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "开心跑腿",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "color": "#b7b7b7",
@@ -50,14 +40,11 @@
       }
     ]
   },
-<<<<<<< HEAD
   
   "useExtendedLib": { 
     "weui": true
   },
     
   "style": "v2",
-=======
->>>>>>> 9d4e062aa0f30b3913a7d3ac83cb855af80c191b
   "sitemapLocation": "sitemap.json"
 }

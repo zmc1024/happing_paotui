@@ -1,1 +1,28 @@
 /* component/title/title.wxss */
+.bgc {
+  display: flex;
+}
+.flex {
+  flex: 1;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.flex-d{
+  margin-bottom: 0;
+  padding-bottom: 33px;
+}
+.circle {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  background: #e5f5ff;
+  margin: 0 auto;
+}
+.word {
+  height: 25px;
+  line-height: 25px;
+}
+.text {
+  color: #e5f5ff;
+}

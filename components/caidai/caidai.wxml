@@ -1,0 +1,17 @@
+<!--components/caidai/caidai.wxml-->
+<view class="caidai">
+	<ul class="ul">
+		<li class="li"></li>
+		<li class="li"></li>
+		<li class="li"></li>
+		<li class="li"></li>
+		<li class="li"></li>
+		<li class="li"></li>
+		<li class="li"></li>
+		<li class="li"></li>
+		<li class="li"></li>
+		<li class="li"></li>
+		<li class="li"></li>
+	</ul>
+</view>
+

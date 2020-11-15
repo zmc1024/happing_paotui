@@ -1,2 +1,57 @@
 <!--component/address/address.wxml-->
-<text>component/address/address.wxml</text>
+<view class="address_all">
+	<view class="ji_address">
+		<text class="iconfont icon-tongxinyuantu"></text>
+		<input
+		 type="text"
+		 class="ji_addr input"
+		 placeholder="{{jiaddr_plac}}"
+		/>
+	</view>
+
+	<view class="jiname_num">
+		<input
+		 type="text"
+		 class="ji_name input"
+		 placeholder="{{ji_name}}"
+		/>
+		<input
+		 type="text"
+		 class="ji_number input"
+		 placeholder="{{ji_number}}"
+		/>
+	</view>
+
+	<view class="shou_address">
+		<text class="iconfont icon-tongxinyuantu"></text>
+		<input
+		 type="text"
+		 class="shou_addr input"
+		 placeholder="{{shouaddr_plac}}"
+		/>
+	</view>
+
+	<view class="shouname_num">
+		<input
+		 type="text"
+		 class="shou_name input"
+		 placeholder="{{shou_name}}"
+		/>
+		<input
+		 type="text"
+		 class="shou_number input"
+		 placeholder="{{shou_number}}"
+		/>
+	</view>
+
+	<view class="visit_time">
+		<text class="iconfont icon-tongxinyuantu"></text>
+		<input
+		 type="text"
+		 class="shou_addr input"
+		 placeholder="{{visit_time}}"
+		/>
+	</view>
+
+</view>
+
