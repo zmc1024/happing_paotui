@@ -1,10 +1,17 @@
 <!--pages/Verified/Verified.wxml-->
 <view class="myCard">
-    <h1>我的名片</h1>
-    <image class="avatarNull" src="/../image/avatarNull.png" alt=""></image>
-    <canvas class="avatar" type="2d" canvas-id="" bindtouchstart="" bindtouchmove="" bindtouchend=""
+    <view class="left">
+        <p class="mine">我的名片</p>
+        <image class="avatarNull" src="/../image/avatarNull.png" alt=""></image>
+        <canvas class="avatar" type="2d" canvas-id="" bindtouchstart="" bindtouchmove="" bindtouchend=""
         bindtouchcancel="" bindlongtap="" binderror=""></canvas>
-      
-    
+    </view>
+    <view class="right">
+        <view class="name">姓名：</view>
+        <view class="grade">年级：</view>
+        <view class="stuNum">学号：</view>
+        <view class="cardId">电话：</view>
+    </view>   
 </view>
+
   

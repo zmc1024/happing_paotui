@@ -32,8 +32,8 @@
     flex: 1;
 }
 .btn button {
-    width: 140rpx;
-    height: 130rpx;
+    width: 240rpx;
+    height: 150rpx;
     border-radius: 30rpx;
 }
 .btn button p {
