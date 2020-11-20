@@ -4,8 +4,6 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    winWidth: Number,
-    winHeight: Number,
     currentTab: Number,
     navTitle: {
       type: Array,

@@ -1,9 +1,37 @@
-<!--components/community/grid.wxml-->
+<!-- components/community/grid.wxml -->
 <view class="grid">
   <view class="grid-wrapper">
-    <view class="grid-item" wx:for="{{grid}}" wx:key="index">
-      <image src="{{item.image}}" mode="widthFix"></image>
-      <text>{{item.title}}</text>
+    <view class="grid-item" bindtap="home">
+      <image src="{{grid[0].image}}" mode="widthFix"></image>
+      <text>{{grid[0].title}}</text>
+    </view>
+    <view class="grid-item">
+      <image src="{{grid[1].image}}" mode="widthFix"></image>
+      <text>{{grid[1].title}}</text>
+    </view>
+    <view class="grid-item">
+      <image src="{{grid[2].image}}" mode="widthFix"></image>
+      <text>{{grid[2].title}}</text>
+    </view>
+    <view class="grid-item">
+      <image src="{{grid[3].image}}" mode="widthFix"></image>
+      <text>{{grid[3].title}}</text>
+    </view>
+    <view class="grid-item">
+      <image src="{{grid[4].image}}" mode="widthFix"></image>
+      <text>{{grid[4].title}}</text>
+    </view>
+    <view class="grid-item">
+      <image src="{{grid[5].image}}" mode="widthFix"></image>
+      <text>{{grid[5].title}}</text>
+    </view>
+    <view class="grid-item">
+      <image src="{{grid[6].image}}" mode="widthFix"></image>
+      <text>{{grid[6].title}}</text>
+    </view>
+    <view class="grid-item">
+      <image src="{{grid[7].image}}" mode="widthFix"></image>
+      <text>{{grid[7].title}}</text>
     </view>
   </view>
 </view>

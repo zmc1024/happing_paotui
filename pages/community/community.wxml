@@ -1,7 +1,63 @@
 <!-- pages/community/community.wxml -->
 <view class="wrapper">
   <van-search value="{{ value }}" placeholder="请输入搜索关键词" clearable="true" maxlength="-1" shape="round" />
-  <grid grid="{{grid}}"/>
+  <grid grid="{{grid}}" />
   <nav-bar nav-title="{{navTitle}}" bind:sendCurrentTab="receiveCurrentTab" currentTab="{{currentTab}}"></nav-bar>
-  <c-swiper current="{{currentTab}}" bind:sendCurrentTab="receiveCurrentTab"></c-swiper>
+  <swiper current="{{currentTab}}" class="swiper-box" style="height:{{(swiHeight + 50) * 2}}rpx" duration="100" bindchange="bindChange">
+    <swiper-item class="swiper-item">
+      <view id="comment" class="comment" wx:for="{{secondHand}}" wx:key="index">
+        <view class="avatar">
+          <image class="" src="/image/community/squirrel.jpg" mode="widthFix" />
+          <view class="avatar-detail">
+            <text class="name">{{item.avatar.name}}</text>
+            <text class="from">{{item.avatar.from}}</text>
+          </view>
+        </view>
+        <view class="content-wrapper">
+          <text class="content">{{item.content.text}}</text>
+          <view class="img-wrapper">
+            <image class="content-img" src="{{item.content.img[0]}}" />
+            <image class="content-img" src="{{item.content.img[1]}}" />
+          </view>
+        </view>
+        <view class="content-footer">
+          <text class="detail">{{item.footer.time}}</text>
+          <text class="detail-visit">{{item.footer.visit}}</text>
+          <van-icon name="eye-o" size="36rpx" class="vc" />
+          <view class="icon">
+            <text class="{{item.whatColor ? 'good-job' : ''}}">{{item.footer.count}}</text>
+            <van-icon name="good-job-o" size="36rpx" class="vc" bind:click="like" data-index="{{index}}" color="{{item.whatColor ? '#24ADF3' : '#c4c4c4'}}" />
+            <view class="more">
+              <text>{{item.footer.comment}}</text>
+              <van-icon name="more-o" size="36rpx" class="vc" />
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="load-more-wrap">
+        <block wx:if="{{hasMore}}">
+          <view class="load-content">
+            <van-loading size="24px" type="spinner" custom-class="my-loading">加载中...</van-loading>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="load-content">
+            <text class="">没有更多内容了哦~</text>
+          </view>
+        </block>
+      </view>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <view>金融</view>
+    </swiper-item>
+    <swiper-item class="swiper-item">
+      <view>理财</view>
+    </swiper-item>
+  </swiper>
+  <!-- <c-swiper class="c-swiper" current="{{currentTab}}" bind:sendCurrentTab="receiveCurrentTab"></c-swiper> -->
 </view>
+<go-top scroll-top="{{scrollTop}}" screen-height="{{systemInfo.screenHeight}}" tabbar-height="{{systemInfo.tabbarHeight}}"></go-top>
+<view class="tabbar">
+  dasdsa
+</view>
+  

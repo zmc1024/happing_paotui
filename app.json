@@ -1,14 +1,17 @@
 {
-  "pages":[
+  "pages": [
+    "pages/community/community",
     "pages/index/index",
     "pages/user/user",
-    "pages/community/community",
     "pages/orderReceived/orderReceived",
     "pages/myWallet/myWallet",
     "pages/orderSent/orderSent",
     "pages/Verified/Verified",
     "pages/addressBook/addressBook",
-    "pages/Service/Service"
+    "pages/Service/Service",
+    "pages/community/announce/announce",
+    "pages/community/home/home",
+    "pages/community/vip/vip"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -40,10 +43,8 @@
       }
     ]
   },
-  
-  "useExtendedLib": { 
+  "useExtendedLib": {
     "weui": true
   },
-    
   "sitemapLocation": "sitemap.json"
 }

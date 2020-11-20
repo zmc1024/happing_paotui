@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/zmc1024/happing_paotui#readme",
   "dependencies": {
-    "@vant/weapp": "^1.5.2"
+    "@vant/weapp": "^1.6.1",
+    "weui-miniprogram": "^1.0.6"
   }
 }

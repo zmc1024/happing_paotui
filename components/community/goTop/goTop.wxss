@@ -1,0 +1,6 @@
+/* components/community/goTop/goTop.wxss */
+
+.scrollToTop-wrapper .scrollToTop{
+  width: 100rpx;
+
+}

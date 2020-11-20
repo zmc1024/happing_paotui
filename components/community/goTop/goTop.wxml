@@ -1,0 +1,6 @@
+<!--components/community/goTop/goTop.wxml-->
+<block wx:if="{{scrollTop > screenHeight}}">
+  <view class="scrollToTop-wrapper" style="position: fixed;bottom:{{tabbarHeight}}rpx; right:46rpx;z-index: 999" bindtap="goTop">
+    <image class="scrollToTop" src="/image/community/rocket.png" mode="widthFix" />
+  </view>
+</block>
