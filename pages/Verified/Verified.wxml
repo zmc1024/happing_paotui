@@ -7,11 +7,21 @@
         bindtouchcancel="" bindlongtap="" binderror=""></canvas>
     </view>
     <view class="right">
-        <view class="name">姓名：</view>
-        <view class="grade">年级：</view>
-        <view class="stuNum">学号：</view>
-        <view class="cardId">电话：</view>
-    </view>   
+        <view class="name">姓名：{{inputName}}</view>
+        <view class="grade">年级：{{inputClass}}</view>
+        <view class="stuNum">学号：{{inputClassNum}}</view>
+        <view class="cardId">电话：{{inputTele}}</view>
+    </view> 
+    <view class="perfect" bind:tap="openConfirm">
+        <p >完善信息</p>
+        <mp-icon icon="arrow" color="white" size="{{15}}"></mp-icon>
+        <mp-dialog title="完善信息" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+            <input class="weui-input"  maxlength="10" bindinput="bindKeyInputName" placeholder="请输入您的姓名"/>
+            <input class="weui-input"  maxlength="15" bindinput="bindKeyInputClass" placeholder="请输入您的年级"/>
+            <input class="weui-input"  maxlength="15" bindinput="bindKeyInputClassNum" placeholder="请输入您的学号"/>
+            <input class="weui-input"  maxlength="15" bindinput="bindKeyInputTele" placeholder="请输入您的电话"/>
+        </mp-dialog>
+    </view>
 </view>
 
   

@@ -7,11 +7,11 @@
     background-color: DeepSkyBlue;
     border-radius: 70rpx;
     margin-left: 50rpx;
-    
+    position: relative;
 }
 .right{
     margin-top: 100rpx;
-    width: 300rpx;
+    width: 350rpx;
     height: 400rpx;
 }
 .right view{
@@ -36,10 +36,20 @@ image{
     margin-top: 40rpx;
     width: 200rpx;
     height: 200rpx;
+    z-index: 1;
 }
 canvas{
-    margin-left: 40rpx;
-    margin-top: 40rpx;
+    position: absolute;
+    left: 40rpx;
+    top: 100rpx;
     width: 200rpx;
     height: 200rpx;
+    z-index: 2s;
+}
+.perfect{
+    position: absolute;
+    width: 200rpx;
+    top: 83%;
+    right: 10rpx;
+    color: #ffffff;
 }

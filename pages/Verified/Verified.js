@@ -5,8 +5,48 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    inputName: '',
+    inputClass: '',
+    inputClassNum: '',
+    inputTele: '',
+    dialogShow: false,
+    buttons: [{text: '确定'}],
+    res:''
   },
+  tapDialogButton(e) {
+    this.setData({
+        dialogShow: false,
+        res: e.detail.item.text
+    })
+  },
+  bindKeyInputName: function (e) {
+      this.setData({
+        inputName: e.detail.value
+      })
+  },
+  bindKeyInputClass: function (e) {
+    this.setData({
+      inputClass: e.detail.value
+    })
+  },
+  bindKeyInputClassNum: function (e) {
+    this.setData({
+      inputClassNum: e.detail.value
+    })
+  },
+  bindKeyInputTele: function (e) {
+    this.setData({
+      inputTele: e.detail.value
+    })
+  },
+  
+  openConfirm: function () {
+    this.setData({
+        dialogShow: true
+    })
+  },
+  
+
 
   /**
    * 生命周期函数--监听页面加载
